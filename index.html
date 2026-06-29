@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="ro">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ElectroHub | Magazin electronic premium</title>
+    <meta name="description" content="Site-ul complet pentru un magazin electronic premium, cu secțiuni moderne și design profesional." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container nav-wrap">
+        <a class="brand" href="index.html">Electro<span>Hub</span></a>
+        <button class="menu-toggle" aria-label="Deschide meniul">
+          <span></span><span></span><span></span>
+        </button>
+        <nav class="site-nav">
+          <a href="index.html" class="active">Acasă</a>
+          <a href="products.html">Produse</a>
+          <a href="about.html">Despre</a>
+          <a href="contact.html">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="container hero-grid">
+          <div class="hero-copy">
+            <p class="eyebrow">Magazin electronic premium</p>
+            <h1>Produse moderne, design curat și experiență premium.</h1>
+            <p>Un site complet, elegant și gata pentru a prezenta telefoane, audio, gaming și accesorii într-un format profesionist.</p>
+            <div class="hero-actions">
+              <a class="btn btn-primary" href="products.html">Vezi produse</a>
+              <a class="btn btn-outline" href="contact.html">Solicită ofertă</a>
+            </div>
+          </div>
+          <div class="hero-visual">
+            <img src="assets/hero.svg" alt="Imagine reprezentativă pentru produs electronic" />
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <div class="section-head">
+            <p class="eyebrow">Categorii</p>
+            <h2>Tot ce ai nevoie pentru un setup complet.</h2>
+          </div>
+          <div class="card-grid three-up">
+            <article class="card">
+              <h3>Smartphones</h3>
+              <p>Modele premium, performanță ridicată și design impecabil.</p>
+            </article>
+            <article class="card">
+              <h3>Audio</h3>
+              <p>Căști și boxe cu sunet clar, confort și stil.</p>
+            </article>
+            <article class="card">
+              <h3>Gaming</h3>
+              <p>Mouse, tastaturi și accesorii pentru performanță maximă.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section alt-bg">
+        <div class="container">
+          <div class="section-head">
+            <p class="eyebrow">Produse recomandate</p>
+            <h2>Selecție modernă pentru orice tip de utilizator.</h2>
+          </div>
+          <div class="card-grid three-up">
+            <article class="card product-card">
+              <img src="assets/product-phone.svg" alt="Telefon premium" />
+              <h3>iPhone 15</h3>
+              <p>Cameră excelentă, performanță rapidă și finisaj premium.</p>
+              <a href="contact.html">Cere ofertă</a>
+            </article>
+            <article class="card product-card">
+              <img src="assets/product-audio.svg" alt="Căști audio" />
+              <h3>Căști Bose</h3>
+              <p>Sunet clar, comfort ridicat și experiență audio de top.</p>
+              <a href="contact.html">Cere ofertă</a>
+            </article>
+            <article class="card product-card">
+              <img src="assets/product-gaming.svg" alt="Accesoriu gaming" />
+              <h3>Mouse Logitech G Pro</h3>
+              <p>Precizie ridicată și design ergonomie pentru gaming.</p>
+              <a href="contact.html">Cere ofertă</a>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container split">
+          <div>
+            <p class="eyebrow">Despre noi</p>
+            <h2>Un site construit pentru a inspira încredere și calitate.</h2>
+            <p>Structura este clară, interfața este modernă și conținutul poate fi extins foarte ușor pentru orice magazin electronic.</p>
+          </div>
+          <div class="quote-box">
+            <p>“Fiecare secțiune este gândită pentru a arăta profesionalism, claritate și stil.”</p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-wrap">
+        <p>© <span id="year"></span> ElectroHub. Toate drepturile rezervate.</p>
+        <a href="contact.html">Contact</a>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

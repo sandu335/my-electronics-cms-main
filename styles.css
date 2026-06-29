@@ -1,0 +1,57 @@
+:root {
+  --bg: #050816;
+  --panel: #0f172a;
+  --panel-2: #111c33;
+  --text: #f5f7ff;
+  --muted: #94a3b8;
+  --accent: #39d98a;
+  --accent-2: #4d7bff;
+  --border: rgba(255,255,255,0.12);
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: 'Inter', sans-serif; background: linear-gradient(135deg, var(--bg), #091224 60%, #0b1020); color: var(--text); line-height: 1.6; }
+a { color: inherit; text-decoration: none; }
+img { max-width: 100%; display: block; }
+button, input, textarea { font: inherit; }
+.container { width: min(1120px, calc(100% - 2rem)); margin: 0 auto; }
+.site-header { position: sticky; top: 0; z-index: 20; background: rgba(5,8,22,0.8); backdrop-filter: blur(12px); border-bottom: 1px solid var(--border); }
+.nav-wrap { display: flex; align-items: center; justify-content: space-between; padding: 1rem 0; }
+.brand { font-size: 1.2rem; font-weight: 800; letter-spacing: 0.04em; }
+.brand span { color: var(--accent); }
+.site-nav { display: flex; gap: 1.1rem; }
+.site-nav a { color: var(--muted); transition: color .2s ease; }
+.site-nav a:hover, .site-nav a.active { color: var(--text); }
+.menu-toggle { display: none; background: transparent; border: none; cursor: pointer; flex-direction: column; gap: .25rem; }
+.menu-toggle span { width: 24px; height: 2px; background: var(--text); }
+.hero { padding: 4rem 0 3rem; }
+.hero-grid { display: grid; grid-template-columns: 1.1fr .9fr; gap: 2rem; align-items: center; }
+.eyebrow { text-transform: uppercase; letter-spacing: .24em; font-size: .8rem; color: var(--accent); font-weight: 700; margin-bottom: .8rem; }
+.hero h1, .section-head h2, .content-page h1 { font-size: clamp(2rem, 4vw, 3rem); line-height: 1.1; margin-bottom: 1rem; }
+.hero-copy p { color: var(--muted); max-width: 620px; }
+.hero-actions { display: flex; flex-wrap: wrap; gap: 1rem; margin-top: 1.5rem; }
+.btn { display: inline-flex; justify-content: center; align-items: center; padding: .85rem 1.2rem; border-radius: 999px; font-weight: 600; transition: transform .2s ease, background .2s ease; }
+.btn:hover { transform: translateY(-2px); }
+.btn-primary { background: linear-gradient(135deg, var(--accent), var(--accent-2)); color: white; }
+.btn-outline { border: 1px solid var(--border); background: rgba(255,255,255,.04); }
+.hero-visual img { border-radius: 1.4rem; border: 1px solid var(--border); box-shadow: 0 24px 60px rgba(0,0,0,.35); }
+.section { padding: 2rem 0 1rem; }
+.alt-bg { background: rgba(255,255,255,.03); margin-top: 1rem; padding: 2.2rem 0; }
+.section-head { margin-bottom: 1.2rem; }
+.card-grid { display: grid; gap: 1rem; }
+.three-up { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+.card { background: linear-gradient(145deg, rgba(255,255,255,.06), rgba(255,255,255,.02)); border: 1px solid var(--border); border-radius: 1.2rem; padding: 1.2rem; box-shadow: 0 16px 40px rgba(0,0,0,.2); }
+.card h3 { margin-bottom: .45rem; }
+.card p { color: var(--muted); }
+.product-card img { margin-bottom: .8rem; border-radius: .9rem; }
+.product-card a { display: inline-block; margin-top: .8rem; color: var(--accent); font-weight: 600; }
+.split { display: grid; grid-template-columns: 1.1fr .9fr; gap: 1.5rem; align-items: center; }
+.quote-box { padding: 1.2rem; border-radius: 1.1rem; background: rgba(255,255,255,.05); border: 1px solid var(--border); color: var(--text); }
+.page { padding: 3rem 0; }
+.content-page { max-width: 760px; }
+.content-page p { color: var(--muted); margin-bottom: 1rem; }
+.contact-form { display: grid; gap: .9rem; margin-top: 1.2rem; }
+.contact-form input, .contact-form textarea { width: 100%; padding: .85rem 1rem; border-radius: .9rem; border: 1px solid var(--border); background: rgba(255,255,255,.04); color: var(--text); }
+.site-footer { padding: 2rem 0 2.5rem; border-top: 1px solid var(--border); margin-top: 2rem; }
+.footer-wrap { display: flex; justify-content: space-between; align-items: center; color: var(--muted); }
+@media (max-width: 860px) { .hero-grid, .split, .three-up { grid-template-columns: 1fr; } .site-nav { display: none; flex-direction: column; position: absolute; top: 68px; right: 1rem; background: var(--panel); padding: 1rem; border: 1px solid var(--border); border-radius: 1rem; } .site-nav.open { display: flex; } .menu-toggle { display: flex; } }
